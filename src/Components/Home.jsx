@@ -41,7 +41,6 @@ export function Home() {
         >
             <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto gap-0">
 
-                {/* Badge */}
                 <div className="flex items-center gap-2 border border-(--accent)/30 px-5 py-1 rounded-full mb-10">
                     <span className="w-1.5 h-1.5 bg-(--accent) rounded-full" />
                     <span className="text-(--accent) font-dm-mono text-[0.7rem] tracking-wide font-medium capitalize">
@@ -188,13 +187,11 @@ export function Home() {
                     </div>
                 )}
 
-                {/* Heading */}
                 <h1 className="text-(--text) font-syne text-2xl font-bold text-center leading-[1.1] tracking-tight">
                     Stop <span className="text-(--accent)">fake news</span> before it
                     <br className="hidden sm:block" /> spreads
                 </h1>
 
-                {/* Quick-fill chips */}
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3 md:gap-4">
                     {fillerTexts.map((t) => (
                         <button
