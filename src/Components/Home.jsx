@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "/api/predict";
+const API_URL = "http://localhost:5000/predict";
 
 export function Home() {
     const [text, setText]         = useState("");
