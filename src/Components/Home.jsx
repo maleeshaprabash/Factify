@@ -41,7 +41,7 @@ export function Home() {
         >
             <div className="relative flex flex-col items-center justify-center w-full max-w-4xl mx-auto gap-0">
 
-                <div className="flex items-center gap-2 border border-(--accent)/30 px-5 py-1 rounded-full mb-10">
+                <div className="flex items-center gap-2 border border-(--accent)/30 px-5 py-1 rounded-full mb-15">
                     <span className="w-1.5 h-1.5 bg-(--accent) rounded-full" />
                     <span className="text-(--accent) font-dm-mono text-[0.7rem] tracking-wide font-medium capitalize">
                         AI-powered fact checking
@@ -50,7 +50,7 @@ export function Home() {
 
                 <form
                     onSubmit={handleSubmit}
-                    className="w-full flex flex-row items-center bg-(--card) border border-(--border) rounded-xl p-3.5 transition-all focus-within:border-gray-500 focus-within:shadow-[0_0_20px_rgba(255,255,255,0.05)] shadow-lg mb-6"
+                    className="w-full flex flex-row items-center bg-(--card) border border-(--border) rounded-xl p-3.5 transition-all focus-within:border-gray-500 focus-within:shadow-[0_0_20px_rgba(255,255,255,0.05)] shadow-lg mb-10"
                 >
                     {/* Search icon */}
                     <div className="hidden sm:flex pl-3 pr-2 text-(--muted)">
@@ -187,7 +187,7 @@ export function Home() {
                     </div>
                 )}
 
-                <h1 className="text-(--text) font-syne text-2xl font-bold text-center leading-[1.1] tracking-tight">
+                <h1 className="text-(--text) font-syne text-2xl font-bold text-center leading-[1.1] tracking-tight mb-5">
                     Stop <span className="text-(--accent)">fake news</span> before it
                     <br className="hidden sm:block" /> spreads
                 </h1>
