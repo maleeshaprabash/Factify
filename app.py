@@ -42,7 +42,10 @@ stop_words  = set(stopwords.words("english"))
 
 
 def preprocess_text(text: str) -> str:
-    """Lowercase → strip punctuation → lemmatize → remove stopwords."""
+    """Lowercase → remove Reuters prefix → strip punctuation → lemmatize → remove stopwords."""
+    # Remove '(Reuters) -' and similar city/source tags from the beginning
+    text = re.sub(r'^.*?\s*\(Reuters\)\s*-\s*', '', text, flags=re.IGNORECASE)
+    
     text   = re.sub(r"[^\w\s]", "", text.lower())
     tokens = [
         lemmatizer.lemmatize(word)
